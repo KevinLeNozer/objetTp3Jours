@@ -33,8 +33,12 @@ public class Mission {
         }
         return nbrHeurePrevues;
     }
-    public void ajoutReleve(LocalDate date, Integer nbrHeures) {
-        releveHoraire.put(date, nbrHeures);
+    public void ajoutReleve(LocalDate date, Integer nbrHeures) throws ErreurSIException {
+        if (nbrHeures > 24) {
+            throw new ErreurSIException("Le nombre d'heures doit être inférieur à 24");
+        } else {
+            releveHoraire.put(date, nbrHeures);
+        }
     }
 
     @Override

@@ -8,7 +8,6 @@ public class Projet {
     private LocalDate debut;
     private LocalDate fin;
     private double prixFactureMO;
-
     private ArrayList<Mission> missions = new ArrayList<>();
 
     public Projet(String nom, LocalDate debut, LocalDate fin, double prixFactureMO,
@@ -19,7 +18,7 @@ public class Projet {
         this.prixFactureMO = prixFactureMO;
         this.missions = mission;
     }
-    
+
     public double cumulCoutMO() {
         double cout = 0;
         for (Mission mission : missions) {
