@@ -6,7 +6,7 @@ import java.util.List;
 public class MiniExcursionPayante extends MiniExcursion{
     private int tarif;
 
-    public MiniExcursionPayante(String libelleMiniExcursion, int nbrePlace, List<Etape> lesEtapes) {
+    public MiniExcursionPayante(String libelleMiniExcursion, int nbrePlace, List<Etape> lesEtapes, float tarif) {
         super(libelleMiniExcursion, nbrePlace, lesEtapes);
     }
 
