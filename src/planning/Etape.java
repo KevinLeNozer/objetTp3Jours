@@ -12,13 +12,16 @@ public class Etape {
         this.descriptionPrevue = descriptionPrevue;
         this.dureePrevue = dureePrevue;
     }
+
+
+
     public int getNumEtape() {
         // retourne le numéro de l'étape
     }
 
     public String getDescriptionPrevue() {
         // retourne la description
-        return descriptionPrevue
+        return descriptionPrevue;
     }
 
     public LocalTime donneDureePrevueHHMM() {

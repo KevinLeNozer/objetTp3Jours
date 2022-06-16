@@ -6,6 +6,8 @@ public class MiniExcursionPlanifie {
     private LocalDate heureDepart;
     private int nbreInscrits;
 
+    private MiniExcursion laMiniExcursion;
+
     public boolean estComplete() {
         //retourne vrai si le nombre d'inscrit est égal au nombre de places prévues dans la mini excursion
         if (nbreInscrits == getLaminiExcursion().getNbrePlace()) {
@@ -18,6 +20,7 @@ public class MiniExcursionPlanifie {
     public MiniExcursion getLaminiExcursion() {
         // retourne la mini excursion correspondante à
         // l'excursion planifiée
+        return laMiniExcursion;
     }
 
     public MiniExcursionPlanifie(LocalDate heureDepart, int nbreInscrits) {

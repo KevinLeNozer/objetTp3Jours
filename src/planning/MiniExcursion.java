@@ -38,7 +38,7 @@ public class MiniExcursion {
 
     public void ajouteEtape(uneEtape)     {
         // ajoute une etape à l'excurison
-        lesEtapes.add();
+        //lesEtapes.add(uneEtape);
     }
 
     public int donneDureePrevue() {
