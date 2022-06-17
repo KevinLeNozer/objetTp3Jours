@@ -8,6 +8,7 @@ public class MiniExcursionPayante extends MiniExcursion{
 
     public MiniExcursionPayante(String libelleMiniExcursion, int nbrePlace, List<Etape> lesEtapes, float tarif) {
         super(libelleMiniExcursion, nbrePlace, lesEtapes);
+        this.setTarif(tarif);
     }
 
     public float getTarif() {
@@ -15,7 +16,7 @@ public class MiniExcursionPayante extends MiniExcursion{
         return tarif;
     }
     public void setTarif(float tarif) {
-        //redéfini le tarif
+        this.tarif = (int) tarif;
     }
 
 }
