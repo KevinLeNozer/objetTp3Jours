@@ -7,6 +7,14 @@ public class Carre implements Forme {
         this.cote = cote;
     }
 
+    public int getCote() {
+        return cote;
+    }
+
+    public void setCote(int cote) {
+        this.cote = cote;
+    }
+
     @Override
     public double calculAir() {
         return cote * cote;
